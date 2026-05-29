@@ -5,7 +5,7 @@ A lightweight CLI for scaffolding vanilla HTML/CSS/JS projects with architecture
 ## Installation
 
 ```bash
-npm install -g meow-cli-scaffold
+npm install -g meow-cli-scaffold@latest
 ```
 
 ## Usage
