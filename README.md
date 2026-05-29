@@ -1,6 +1,6 @@
 # 😺 meow-cli-scaffold
 
-A lightweight CLI for scaffolding vanilla HTML/CSS/JS projects with an Angular-style architecture.
+A lightweight CLI for scaffolding vanilla HTML/CSS/JS projects with architecture.
 
 ## Installation
 
