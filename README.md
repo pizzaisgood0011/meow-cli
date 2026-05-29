@@ -86,7 +86,7 @@ my-app/
 │       └── images/
 ├── index.html
 ├── package.json
-└── bodaro.config.json
+└── meow.config.json
 ```
 ## License
 
