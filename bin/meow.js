@@ -7,6 +7,17 @@ import { list } from '../commands/list.js'
 import { del } from '../commands/delete.js'
 import { serve } from '../commands/serve.js'
 import { build } from '../commands/build.js'
+import { readFileSync } from 'fs'
+import { fileURLToPath } from 'url'
+import { dirname, join } from 'path'
+
+const __dirname = dirname(fileURLToPath(import.meta.url))
+const pkg = JSON.parse(readFileSync(join(__dirname, '../package.json'), 'utf-8'))
+
+program
+    .name('meow')
+    .description('A lightweight CLI for scaffolding vanilla HTML/CSS/JS projects')
+    .version(pkg.version)
 
 program
     .command('new')
@@ -17,12 +28,6 @@ program
     })
 
 program
-    .name('meow')
-    .description('A lightweight CLI for scaffolding vanilla HTML/CSS/JS projects')
-    .version('1.0.0')
-
-// Commands
-program
     .command('generate')
     .alias('g')
     .description('Generate a page or component')
@@ -32,7 +37,6 @@ program
         generate(type, name)
     })
 
-// List
 program
     .command('list <type>')
     .alias('ls')
@@ -41,7 +45,6 @@ program
         list(type)
     })
 
-// Delete    
 program
     .command('delete')
     .alias('d')
@@ -52,7 +55,6 @@ program
         del(type, name)
     })
 
-// Serve
 program
     .command('serve')
     .alias('s')
@@ -62,9 +64,9 @@ program
         serve(options)
     })
 
-// Build    
 program
     .command('build')
+    .alias('b')
     .description('Minify and bundle project')
     .action(async () => {
         await build()
