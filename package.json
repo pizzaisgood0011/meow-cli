@@ -1,6 +1,6 @@
 {
   "name": "meow-cli-scaffold",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A lightweight CLI for scaffolding vanilla HTML/CSS/JS projects",
   "main": "bin/meow.js",
   "bin": {

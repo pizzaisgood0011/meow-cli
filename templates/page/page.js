@@ -1,8 +1,7 @@
-export function render() {
+// __NAME__ page logic
+export async function render() {
     const app = document.getElementById('app')
-    app.innerHTML = `
-        <div id="__NAME__-page">
-        <h1>__NAME__</h1>
-        </div>
-    `
+    const res = await fetch('./src/app/pages/__NAME__/__NAME__.html')
+    const html = await res.text()
+    app.innerHTML = html
 }
