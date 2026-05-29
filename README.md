@@ -59,6 +59,8 @@ meow build
 ```
 
 ## Project Structure
+
+```
 my-app/
 ├── src/
 │   ├── app/
@@ -85,7 +87,7 @@ my-app/
 ├── index.html
 ├── package.json
 └── bodaro.config.json
-
+```
 ## License
 
 MIT © [Bodaro](https://github.com/pizzaisgood0011)
