@@ -215,13 +215,13 @@ charset = utf-8
 indent_style = space
 indent_size = 2`)
 
-    // bodaro.config.json
-    writeFile(path.join(projectDir, 'bodaro.config.json'), `{
-    "projectName": "${projectName}",
-    "pagesDir": "src/app/pages",
-    "componentsDir": "src/app/components",
-    "routerFile": "src/app/core/router.js"
-}`)
+    // meow.config.json
+    writeFile(path.join(projectDir, 'meow.config.json'), `{
+        "projectName": "${projectName}",
+        "pagesDir": "src/app/pages",
+        "componentsDir": "src/app/components",
+        "routerFile": "src/app/core/router.js"
+    }`)
 
     // package.json
     writeFile(path.join(projectDir, 'package.json'), `{
